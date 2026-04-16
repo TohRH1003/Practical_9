@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {// change the below to your jdk path
-        JAVA_HOME = "C:\\Program Files\\Java\\jdk-17.0.18+8"
+        JAVA_HOME = "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.15.6-hotspot"
         PATH = "${JAVA_HOME}\\bin;${env.PATH}"
     }
 
@@ -17,7 +17,7 @@ pipeline {
 
         stage('Checkout') { //change the below path to your repositoy url
             steps {
-                git branch: 'master', url: 'https://github.com/nawaf83/hello-world-java-6.git'
+                git branch: 'master', url: 'https://github.com/TohRH1003/Practical_9.git'
             }
         }
 

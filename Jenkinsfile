@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage('Checkout') { //change the below path to your repositoy url
+        stage('Checkout') { //change the below path to TRH repositoy url
             steps {
                 git branch: 'master', url: 'https://github.com/TohRH1003/Practical_9.git'
             }
